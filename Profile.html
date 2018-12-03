@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<styl>
+<styl><style>
+[class^="top"] {
+    background: green;
+}
+</style>
 #div1 {
     width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-}
+    height: 7
 </style>
 <script>
 function allowDrop(ev) {
@@ -15,6 +16,9 @@ function allowDrop(ev) {
 }
 function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
+}0px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
 }
 function drop(ev) {
     ev.preventDefault();
@@ -74,7 +78,7 @@ function drop(ev) {
 Your browser does not support the audio element.
 </audio>
 <center>
-	<marquee><h1 title="ประวัติส่วนตัว">ประวัติส่วนตัว</h1></marquee>
+	<marquee><h1 class="top-header">ประวัติส่วนตัว</h1></marquee>
 	<div class="img">
 		<img src="oo.jpg" title="รูปของฉัน",alt="My photo", width="300" height="300">
 	</div>
