@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <script type="text/javascript">
+/* This script and many more are available free online at
+The JavaScript Source!! http://javascript.internet.com
+Created by: Mr J | http://www.huntingground.net/ */
+
+function chk_url() {
+  url=unescape(document.location)
+
+  // ใส่ URL ของหน้าที่ใส่ CODE ด้านล่างนี้ครับ
+  if(url.indexOf("http://www.codetukyang.com/java/alert/preview/precode12.htm")!= -1){ // if this string is found
+    alert("คุณกำลังดูหน้านี้แบบ ONLINE") // do this if online
+  } else {
+    alert("คุณกำลังดูหน้านี้แบบ OFFLINE") // do this if offline
+  }
+}
+
+// Multiple onload function created by: Simon Willison
+// http://simon.incutio.com/archive/2004/05/26/addLoadEvent
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
+addLoadEvent(function() {
+  chk_url();
+});
+
+</script>
 <script language="JavaScript">
 
 var ns6=document.getElementById&&!document.all
